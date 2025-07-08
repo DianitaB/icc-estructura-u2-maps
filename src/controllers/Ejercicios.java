@@ -3,7 +3,6 @@ package controllers;
 import java.util.HashMap;
 
 public class Ejercicios {
-
     /**
      * Determina si dos cadenas de caracteres son anagramas.
      * Dos cadenas son anagramas si tienen los mismos caracteres en la misma
@@ -28,6 +27,7 @@ public class Ejercicios {
      * frecuencia.
      */
     public static boolean areAnagrams(String str1, String str2) {
+
         throw new UnsupportedOperationException("Not implemented yet");
 
     }
