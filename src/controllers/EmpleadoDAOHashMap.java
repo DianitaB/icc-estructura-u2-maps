@@ -1,4 +1,5 @@
 package controllers;
+
 import java.util.HashMap;
 import java.util.Map;
 import models.Empleado;
@@ -6,22 +7,26 @@ import models.Empleado;
 public class EmpleadoDAOHashMap implements EmpleadoDAO {
     private Map<Empleado, Empleado> empleados;
 
-    public EmpleadoDAOHashMap(){
+    public EmpleadoDAOHashMap() {
         this.empleados = new HashMap<>();
     }
+
     @Override
-    public void add(Empleado empleado) {
-        empleados.put(empleado, empleado);
+    public void add(Empleado emp) {
+        empleados.put(emp, emp);
     }
 
     @Override
     public void remove(int id) {
-        Empleado temp = new Empleado(id);
-        empleados.remove(temp);
+        Empleado tEmpleado = new Empleado(id);
+        empleados.remove(tEmpleado);
+
     }
 
     @Override
     public void listarEmpleados() {
-    
+       for(Empleado empleado : empleados.values()) {
+            System.out.println(empleado);
+        }
     }
 }

@@ -137,8 +137,11 @@ public class DirectorioTelefonico {
     }
 }
 ```
-## RESULTADOS OBTENIDOS 
-![Resultado de Ejecución](ResultadosMapas.png)
+## RESULTADOS OBTENIDOS EJERCICIO 1
+![Resultado de Ejecución 1](ResultadosMapas.png)
+## RESULTADOS OBTENIDOS EJERCICIO 2
+
+![Resultado de Ejecución 2](DAOS.png)
 
 ---
 

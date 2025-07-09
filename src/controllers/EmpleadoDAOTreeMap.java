@@ -1,10 +1,11 @@
 package controllers;
+import java.util.Map;
 import java.util.TreeMap;
 import models.Empleado;
 
 public class EmpleadoDAOTreeMap implements EmpleadoDAO {
 
-      private TreeMap<Empleado, Empleado> empleados;
+      private Map<Empleado, Empleado> empleados;
 
     public EmpleadoDAOTreeMap(){
         this.empleados = new TreeMap<>();
@@ -23,7 +24,8 @@ public class EmpleadoDAOTreeMap implements EmpleadoDAO {
 
     @Override
     public void listarEmpleados() {
-    
+        for(Empleado empleado : empleados.values()) {
+            System.out.println(empleado);
+        }
     }
-
 }
