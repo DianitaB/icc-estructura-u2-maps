@@ -99,7 +99,6 @@ public class Mapa {
         }
 
         Collections.sort(lista); 
-
         System.out.println("Lista ordenada por ID (Comparable):");
         for (Empleado e : lista) {
             System.out.println(e);

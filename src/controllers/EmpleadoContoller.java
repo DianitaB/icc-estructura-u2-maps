@@ -1,13 +1,21 @@
 package controllers;
 
-import java.util.HashMap;
-import java.util.Map;
 
 import models.Empleado;
 
 public class EmpleadoContoller {
 
-    public EmpleadoContoller() {
+    private EmpleadoDAO empleadoDAO;
+ 
+    public void crearEmpleado(Empleado emp) {
+        empleadoDAO.add(emp);
+    }
+
+    public void eliminarEmpleado(int id) {
+        empleadoDAO.remove(id);
+    }
+    
+    public void listarEmpleados(){
 
     }
 }
