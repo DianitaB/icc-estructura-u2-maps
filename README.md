@@ -138,8 +138,7 @@ public class DirectorioTelefonico {
 }
 ```
 ## RESULTADOS OBTENIDOS 
-
-![Uploading ResultadosMapas.png…]()
+![Resultado de Ejecución](ResultadosMapas.png)
 
 ---
 
