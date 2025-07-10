@@ -143,6 +143,8 @@ public class DirectorioTelefonico {
 
 ![Resultado de Ejecución 2](DAOS.png)
 
+## RESULTADOS OBTENIDOS EJERCICIOS
+![Resultado de Ejecución 2](EJERCICIOS.png)
 ---
 
 ### Consideraciones sobre `hashCode()` y `equals()`

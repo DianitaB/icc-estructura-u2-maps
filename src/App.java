@@ -14,10 +14,10 @@ public class App {
         //runMapExamlpe();
 
         // Ejecuta el ejemplo de gestión de empleados usando HashMap
-        runEmpleadoExample();
+        //runEmpleadoExample();
 
         // Ejecuta los ejercicios de sumatoria y anagramas
-        //runEjerccios();
+        runEjerccios();
     }
 
     private static void runMapExample() {
@@ -27,8 +27,7 @@ public class App {
         mapa.ejemploConLinkedHashMap();
         mapa.ejemplosConTreeMap();
     }
-
-      private static void runEmpleadoExample() {
+    private static void runEmpleadoExample() {
         System.out.println("DIANA BORJA ");
         EmpleadoDAO empleadoDAOHash = new EmpleadoDAOHashMap();
         EmpleadoContoller empleadoContoller = new EmpleadoContoller(empleadoDAOHash);
@@ -62,4 +61,49 @@ public class App {
         empleadoContoller2.listarEmpleados();
 
     }
+    public static void runEjerccios(){
+        Ejercicios ej = new Ejercicios();
+
+        // Primer ejercicios 
+        System.out.println("DIANA BORJA");
+        System.out.println("--EJERCICIO 1--");
+        System.out.println(Ejercicios.areAnagrams("listen", "silent"));    
+        System.out.println(Ejercicios.areAnagrams("hello", "bello"));     
+        System.out.println(Ejercicios.areAnagrams("triangle", "integral"));
+        System.out.println(Ejercicios.areAnagrams("amor", "roma"));      
+        System.out.println(Ejercicios.areAnagrams("ecuador", "acuerdo"));       
+        System.out.println(Ejercicios.areAnagrams("aeiou", "abcd"));  
+
+        //Ssegundo ejercicios
+        System.out.println("-- EJERICICIO 2--");
+        int[] res1 = ej.sumatoriaDeDos(new int[]{9, 2, 3, 6}, 5);
+        int[] res2 = ej.sumatoriaDeDos(new int[]{1, 7, 2, 4}, 6);
+        int[] res3 = ej.sumatoriaDeDos(new int[]{2, 4, 5, 1}, 10);
+        imprimirResultado(res1); 
+        imprimirResultado(res2); 
+        imprimirResultado(res3); 
+
+        // Tercer ejercicios
+        System.out.println("--EJERCICIO 3--");
+        ej.contarCaracteres("hola");
+        ej.contarCaracteres("holaaaaa");
+        ej.contarCaracteres("bikers");
+        ej.contarCaracteres("rodadas");
+
+        //cuarto ejercicio
+        System.out.println("-- EJERCICIO 4--");
+        System.out.println("roma / amora: " + ej.sonAnagramas("selva", "valse"));      
+        System.out.println("listen / silent: " + ej.sonAnagramas("listen", "silent")); 
+        System.out.println("apple / paple: " + ej.sonAnagramas("apple", "paple"));     // true
+        System.out.println("test / tset: " + ej.sonAnagramas("test", "tset")); 
+
+    }
+
+    private static void imprimirResultado(int[] resultado) {
+    if (resultado != null) {
+        System.out.println("Índices encontrados: [" + resultado[0] + ", " + resultado[1] + "]");
+    } else {
+        System.out.println("No se encontró ninguna combinación.");
+    }
+  }
 }
